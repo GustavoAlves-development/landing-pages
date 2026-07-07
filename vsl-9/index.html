@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>   <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <script src="https://connect.facebook.net/signals/config/2414383825726993?v=2.9.344&amp;r=stable&amp;hme=d98df0360f7a8711c7987283e0b102ee424110c5a1bb073d10b776c201181d58&amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C278%2C279%2C277%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C292%2C308%2C215%2C204%2C62%2C205%2C203%2C311%2C302%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+    <style>
+        html, body { margin: 0; padding: 0; overflow-x: hidden; } 
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        
+        /* FIX: Remove focus outline from contenteditable elements in visual builder */
+        [contenteditable], 
+        [contenteditable]:focus, 
+        [contenteditable]:focus-visible {
+            outline: none !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+    </style>
+    
+<script async="" defer src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"></script><script src="https://connect.facebook.net/signals/config/2414383825726993?v=2.9.337&amp;r=stable&amp;hme=a4ca9981c995923b5752040373feb3dd5ae6be6b3954c741d676eccf72e2f0a2&amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C281%2C297%2C215%2C204%2C62%2C205%2C203%2C300%2C291%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async="" data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/en_US/fbevents.js" async="" data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/signals/config/2414383825726993?v=2.9.337&amp;r=stable&amp;hme=a4ca9981c995923b5752040373feb3dd5ae6be6b3954c741d676eccf72e2f0a2&amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C281%2C297%2C215%2C204%2C62%2C205%2C203%2C300%2C291%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async="" data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/en_US/fbevents.js" async="" data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/signals/config/2414383825726993?v=2.9.337&amp;r=stable&amp;hme=a4ca9981c995923b5752040373feb3dd5ae6be6b3954c741d676eccf72e2f0a2&amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C281%2C297%2C215%2C204%2C62%2C205%2C203%2C300%2C291%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async="" data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/en_US/fbevents.js" async="" data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/signals/config/2414383825726993?v=2.9.337&amp;r=stable&amp;hme=a4ca9981c995923b5752040373feb3dd5ae6be6b3954c741d676eccf72e2f0a2&amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C281%2C297%2C215%2C204%2C62%2C205%2C203%2C300%2C291%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async="" data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/en_US/fbevents.js" async="" data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/signals/config/2414383825726993?v=2.9.337&amp;r=stable&amp;hme=a4ca9981c995923b5752040373feb3dd5ae6be6b3954c741d676eccf72e2f0a2&amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C281%2C297%2C215%2C204%2C62%2C205%2C203%2C300%2C291%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async="" data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/en_US/fbevents.js" async="" data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><link rel="preload" href="https://cdn.converteai.net/8d23a539-d648-46a8-91aa-8b7c9a403636/69fe5b967ded961d3690ef1c/main.m3u8" as="fetch" crossorigin="anonymous" data-rocket-custom-head="true"><link rel="dns-prefetch" href="https://license.vturb.com" data-rocket-custom-head="true"><link id="vturb-typography-font-inter" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" type="text/css" data-rocket-custom-head="true"><script data-rocket-custom-head="true">/*<![CDATA[*/
+window.pixelId = "6a125bcfdffbd15e9ba3d5f7";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+/*]]>*/</script><script async="" defer src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script data-rocket-custom-head="true">/*<![CDATA[*/
+window.pixelId = "6a0506c6db7172727b426e5f";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+/*]]>*/</script><script async="" defer src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer data-rocket-custom-head="true"></script><script data-rocket-custom-head="true">/*<![CDATA[*/
+window.pixelId = "69fe9c9ebd1199605558b949";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+/*]]>*/</script><script async="" defer src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><title data-rocket-custom-head="true">vsl 9</title><link rel="preconnect" href="https://fonts.rpages.com.br" crossorigin="" data-rocket-custom-head="true"><link rel="preload" href="https://fonts.rpages.com.br/fontsource/fonts/poppins@latest/latin-400-normal.woff2" as="font" type="font/woff2" crossorigin="" data-rocket-custom-head="true"><link rel="preload" href="https://fonts.rpages.com.br/fontsource/fonts/poppins@latest/latin-700-normal.woff2" as="font" type="font/woff2" crossorigin="" data-rocket-custom-head="true"><style data-component-type="RocketTheme" id="rocket-theme-config" data-rocket-custom-head="true">
+        :root {
+            --color-primary: #27AE60;
+            --color-secondary: #2ecc71;
+            --color-accent: #FF0000;
+            --color-background: #ffffff;
+            --color-text: #111111;
+            --font-sans: 'Poppins', sans-serif;
+        }
+        @font-face {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.rpages.com.br/fontsource/fonts/poppins@latest/latin-400-normal.woff2") format("woff2");
+        }
+        @font-face {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url("https://fonts.rpages.com.br/fontsource/fonts/poppins@latest/latin-600-normal.woff2") format("woff2");
+        }
+        @font-face {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.rpages.com.br/fontsource/fonts/poppins@latest/latin-700-normal.woff2") format("woff2");
+        }
+        @font-face {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url("https://fonts.rpages.com.br/fontsource/fonts/poppins@latest/latin-800-normal.woff2") format("woff2");
+        }
+    </style><style type="text/tailwindcss" data-rocket-custom-head="true">
+        @theme {
+            --color-primary: var(--color-primary);
+            --color-secondary: var(--color-secondary);
+            --color-accent: var(--color-accent);
+            --color-background: var(--color-background);
+            --color-text: var(--color-text);
+            --font-sans: var(--font-sans);
+        }
+    </style><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><style>.is-delay{display: none!important; visibility: hidden!important;}</style><meta property="og:title" content="vsl 9"><meta property="og:description" content="Escreva sua descri&ccedil;&atilde;o aqui!"><meta property="og:url" content="https://xn--espacesant-k7a.site/vsl-9"><script>
+document.addEventListener("DOMContentLoaded", () => {
+    const COOKIE_NAME = 'rpages_sid';
+    const COOKIE_DAYS = 7;
+
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+        return null;
+    }
+
+    function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    function generateSid() {
+         return Date.now().toString(36) + Math.random().toString(36).substr(2);
+    }
+
+    let sid = getCookie(COOKIE_NAME);
+    if (!sid) {
+        sid = generateSid();
+        setCookie(COOKIE_NAME, sid, COOKIE_DAYS);
+    }
+
+    const baseEndpoint = "https://leads-v2.rpages.com.br/api/track/pageview/39546a29fe65a67d5";
+    const trackingUrl = new URL(baseEndpoint);
+    const currentParams = new URLSearchParams(window.location.search);
+
+    // Anexa todos os par&acirc;metros da URL atual (UTMs, etc) &agrave; URL de rastreamento
+    currentParams.forEach((value, key) => {
+        trackingUrl.searchParams.append(key, value);
+    });
+
+    const payload = {
+        ref: document.referrer || window.location.href,
+        sid: sid
+    };
+
+    navigator.sendBeacon(trackingUrl.toString(), new Blob([JSON.stringify(payload)], { type: "text/plain" }));
+
+    window.dispatchEvent(new CustomEvent('rpages_pageview_sent', { detail: { sid: sid } }));
+});
+</script><script>
+  window.pixelId = "6a39aedb9b4d576f850982a2";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script><link rel="dns-prefetch" href="https://cdn.converteai.net" data-rocket-custom-head="true"><link rel="dns-prefetch" href="https://images.converteai.net" data-rocket-custom-head="true"><link rel="preload" href="https://cdn.converteai.net/c0f84c62-fef1-47dd-9b03-54235d14ec9c/6a29fa090de71bb42f5cfc86/main.m3u8" as="fetch" crossorigin="anonymous" data-rocket-custom-head="true"><link rel="preload" href="https://cdn.converteai.net/c0f84c62-fef1-47dd-9b03-54235d14ec9c/6a29fde1703fae361826e954/main.m3u8" as="fetch" crossorigin="anonymous" data-rocket-custom-head="true"><link rel="stylesheet" href="style.css"></head>
+<body class="bg-background font-sans text-text antialiased"><header id="attention-header" class="bg-primary py-5 px-5 text-center shadow-md">
+        <h2 class="text-white text-base md:text-xl font-extrabold leading-tight max-w-3xl mx-auto uppercase tracking-wide">
+            <span class="text-white underline decoration-accent decoration-2 underline-offset-4">ATTENTION:</span><br>
+            Regardez jusqu'&agrave; la fin, cette pr&eacute;sentation sera retir&eacute;e demain !
+        </h2>
+    </header>
+
+    
+    <main id="vsl-content" class="max-w-[800px] mx-auto px-5 pt-6 pb-10 text-center">
+        <div class="relative w-full flex justify-center overflow-hidden">
+      <div class="relative w-full mx-auto" style="max-width: 400px;">
+  <div data-component-type="RocketScript" class="relative w-full mx-auto" style="max-width: 400px;"><vturb-smartplayer id="vid-6a29fdebb9cbb6fe0f91854b" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer> <script type="text/javascript">/*<![CDATA[*/
+var s=document.createElement("script"); s.src="https://scripts.converteai.net/c0f84c62-fef1-47dd-9b03-54235d14ec9c/players/6a29fdebb9cbb6fe0f91854b/v4/player.js", s.async=!0,document.head.appendChild(s);
+/*]]>*/</script></div>
+  <script id="vturb-logic-embed">/*<![CDATA[*/
+if (!window.vturbLoaded_6a29fa1f) {
+      window.vturbLoaded_6a29fa1f = true;
+      var s = document.createElement("script");
+      s.src = "https://scripts.converteai.net/c0f84c62-fef1-47dd-9b03-54235d14ec9c/players/6a29fa1f93ee407eb3121f6b/v4/player.js";
+      s.async = true;
+      document.head.appendChild(s);
+    }
+/*]]>*/</script>
+</div>
+</div>
+
+        <script type="text/javascript">/*<![CDATA[*/
+var s = document.createElement("script");
+            s.src = "https://scripts.converteai.net/8d23a539-d648-46a8-91aa-8b7c9a403636/players/69fe6915a754dbfd9a0af97a/v4/player.js";
+            s.async = true;
+            document.head.appendChild(s);
+/*]]>*/</script>
+
+        
+        <div id="sound-note-container" class="mt-6 flex justify-center">
+            
+        </div>
+
+        
+        <div id="media-proof" class="mt-8 mb-4 flex justify-center">
+            <img src="https://vitalitepure.online/wp-content/uploads/2024/11/22bc3ffc-8666-4500-ae65-5a3e77a2405c-1024x158-1-768x119.webp" alt="CBS News ABC NBC FOX" width="760" height="119" class="max-w-full h-auto opacity-80 grayscale-0 transition-opacity hover:opacity-100">
+        </div>
+    </main>
+
+    
+    <section id="social-proof-comments" class="max-w-[800px] mx-auto px-5 pb-12">
+        <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-5 border-b pb-2">15 commentaires</h3>
+        <div class="cmt-box bg-white border border-gray-100 rounded-[15px] p-4 md:p-6 shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
+
+            <div class="space-y-4">
+                
+                <div class="cmt-item flex gap-4 p-3 rounded-lg transition-colors hover:bg-gray-50 border-b border-gray-50 pb-4">
+                    <img class="cmt-avatar w-[52px] h-[52px] rounded-full object-cover shadow-sm" src="https://pure-vitalite.online/wp-content/uploads/2026/01/1.webp" alt="Val&eacute;rie Petit" loading="lazy" width="52" height="52">
+                    <div class="cmt-body flex-1 min-w-0">
+                        <div class="cmt-name font-bold text-[#365899] text-sm md:text-base leading-none mb-1">Val&eacute;rie Petit:</div>
+                        <p class="cmt-text text-gray-800 text-sm md:text-base leading-relaxed">Si j'avais trouv&eacute; cette vid&eacute;o plus t&ocirc;t, je n'aurais pas perdu autant de temps et d'argent &agrave; essayer de maigrir !</p>
+                        <div class="cmt-meta mt-2 text-gray-500 text-xs md:text-sm">R&eacute;pondre &middot; J'aime &middot; Suivre &middot; 1 min</div>
+                    </div>
+                </div>
+
+                
+                <div class="cmt-item flex gap-4 p-3 rounded-lg transition-colors hover:bg-gray-50 border-b border-gray-50 pb-4">
+                    <img class="cmt-avatar w-[52px] h-[52px] rounded-full object-cover shadow-sm" src="https://pure-vitalite.online/wp-content/uploads/2026/01/2.webp" alt="C&eacute;line Lefevre" loading="lazy" width="52" height="52">
+                    <div class="cmt-body flex-1 min-w-0">
+                        <div class="cmt-name font-bold text-[#365899] text-sm md:text-base mb-1">C&eacute;line Lefevre:</div>
+                        <p class="cmt-text text-gray-800 text-sm md:text-base leading-relaxed">Gr&acirc;ce &agrave; Dieu, j'ai regard&eacute; la vid&eacute;o jusqu'au bout, maintenant je comprends pourquoi je n'arrive pas &agrave; perdre du poids, je vais commencer d&egrave;s aujourd'hui. Merci !</p>
+                        <div class="cmt-meta mt-2 text-gray-500 text-xs">R&eacute;pondre &middot; J'aime &middot; Suivre &middot; 2 min</div>
+                    </div>
+                </div>
+
+                
+                <div class="cmt-item flex gap-4 p-3 rounded-lg transition-colors hover:bg-gray-50 border-b border-gray-50 pb-4">
+                    <img class="cmt-avatar w-[52px] h-[52px] rounded-full object-cover shadow-sm" src="https://pure-vitalite.online/wp-content/uploads/2026/01/3.webp" alt="Colette Dubois" loading="lazy" width="52" height="52">
+                    <div class="cmt-body flex-1 min-w-0">
+                        <div class="cmt-name font-bold text-[#365899] text-sm md:text-base mb-1">Colette Dubois:</div>
+                        <p class="cmt-text text-gray-800 text-sm md:text-base leading-relaxed">Je pensais que ma g&eacute;n&eacute;tique &eacute;tait responsable de mes variations de poids constantes. J'ai enfin trouv&eacute; quelque chose qui fonctionne !</p>
+                        <div class="cmt-meta mt-2 text-gray-500 text-xs">R&eacute;pondre &middot; J'aime &middot; Suivre &middot; 5 min</div>
+                    </div>
+                </div>
+
+                
+                <div class="cmt-item flex gap-4 p-3 rounded-lg transition-colors hover:bg-gray-50 border-b border-gray-50 pb-4">
+                    <img class="cmt-avatar w-[52px] h-[52px] rounded-full object-cover shadow-sm" src="https://pure-vitalite.online/wp-content/uploads/2026/01/4.webp" alt="L&eacute;a Rocher" loading="lazy" width="52" height="52">
+                    <div class="cmt-body flex-1 min-w-0">
+                        <div class="cmt-name font-bold text-[#365899] text-sm md:text-base mb-1">L&eacute;a Rocher:</div>
+                        <p class="cmt-text text-gray-800 text-sm md:text-base leading-relaxed">Moi aussi, je pensais que c'&eacute;tait moi le probl&egrave;me. Heureusement que Am&eacute;lie a tout expliqu&eacute;!</p>
+                        <div class="cmt-meta mt-2 text-gray-500 text-xs">R&eacute;pondre &middot; J'aime &middot; Suivre &middot; 10 min</div>
+                    </div>
+                </div>
+
+                
+                <div class="cmt-item flex gap-4 p-3 rounded-lg transition-colors hover:bg-gray-50 border-b border-gray-50 pb-4">
+                    <img class="cmt-avatar w-[52px] h-[52px] rounded-full object-cover shadow-sm" src="https://pure-vitalite.online/wp-content/uploads/2026/01/5.webp" alt="Am&eacute;lie Martinet" loading="lazy" width="52" height="52">
+                    <div class="cmt-body flex-1 min-w-0">
+                        <div class="cmt-name font-bold text-[#365899] text-sm md:text-base mb-1">Am&eacute;lie Martinet:</div>
+                        <p class="cmt-text text-gray-800 text-sm md:text-base leading-relaxed">Comment est-ce que je fais pour regarder la vid&eacute;o ? Il suffit de cliquer dessus ?</p>
+                        <div class="cmt-meta mt-2 text-gray-500 text-xs">R&eacute;pondre &middot; J'aime &middot; Suivre &middot; 16 min</div>
+                    </div>
+                </div>
+
+                
+                <div class="cmt-item flex gap-4 p-3 rounded-lg transition-colors hover:bg-gray-50 border-b border-gray-50 pb-4">
+                    <img class="cmt-avatar w-[52px] h-[52px] rounded-full object-cover shadow-sm" src="https://pure-vitalite.online/wp-content/uploads/2026/01/6.webp" alt="Madeleine Rousseau" loading="lazy" width="52" height="52">
+                    <div class="cmt-body flex-1 min-w-0">
+                        <div class="cmt-name font-bold text-[#365899] text-sm md:text-base mb-1">Madeleine Rousseau:</div>
+                        <p class="cmt-text text-gray-800 text-sm md:text-base leading-relaxed">Il suffit de cliquer sur la vid&eacute;o et elle commence.</p>
+                        <div class="cmt-meta mt-2 text-gray-500 text-xs">R&eacute;pondre &middot; J'aime &middot; Suivre &middot; 14 min</div>
+                    </div>
+                </div>
+
+                
+                <div class="cmt-item flex gap-4 p-3 rounded-lg transition-colors hover:bg-gray-50 border-b border-gray-50 pb-4">
+                    <img class="cmt-avatar w-[52px] h-[52px] rounded-full object-cover shadow-sm" src="https://pure-vitalite.online/wp-content/uploads/2026/01/10.webp" alt="Simone Allard" loading="lazy" width="52" height="52">
+                    <div class="cmt-body flex-1 min-w-0">
+                        <div class="cmt-name font-bold text-[#365899] text-sm md:text-base mb-1">Simone Allard:</div>
+                        <p class="cmt-text text-gray-800 text-sm md:text-base leading-relaxed">Elle convient, j'ai 72 ans, je l'ai utilis&eacute;e et j'ai perdu 9 kg. Je n'ai plus mal aux genoux, c'est incroyable !</p>
+                        <div class="cmt-meta mt-2 text-gray-500 text-xs">R&eacute;pondre &middot; J'aime &middot; Suivre &middot; 1 h</div>
+                    </div>
+                </div>
+
+                
+                <div class="cmt-item flex gap-4 p-3 rounded-lg transition-colors hover:bg-gray-50">
+                    <img class="cmt-avatar w-[52px] h-[52px] rounded-full object-cover shadow-sm" src="https://pure-vitalite.online/wp-content/uploads/2026/01/15.webp" alt="Nathalie Moreau" loading="lazy" width="52" height="52">
+                    <div class="cmt-body flex-1 min-w-0">
+                        <div class="cmt-name font-bold text-[#365899] text-sm md:text-base mb-1">Nathalie Moreau:</div>
+                        <p class="cmt-text text-gray-800 text-sm md:text-base leading-relaxed">Je confirme, &ccedil;a m'a aid&eacute;e &agrave; relancer la perte de poids alors que j'&eacute;tais bloqu&eacute;e depuis des mois. Incroyable !</p>
+                        <div class="cmt-meta mt-2 text-gray-500 text-xs">R&eacute;pondre &middot; J'aime &middot; Suivre &middot; 3 h</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cmt-foot mt-8 pt-4 border-t border-gray-100 text-gray-400 text-xs font-semibold uppercase tracking-widest text-center">
+                Plugin social Facebook
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="legal-disclaimer" class="bg-gray-50 border-t border-gray-200 py-10 px-5">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-[11px] md:text-xs text-gray-500 leading-relaxed space-y-4">
+                Notre vid&eacute;o, contenu et mat&eacute;riel sont enregistr&eacute;s aupr&egrave;s de la CBL et de l'INPI, toute reproduction sera poursuivie. Nous n'avons pas l'intention de diagnostiquer, traiter, gu&eacute;rir ou pr&eacute;venir toute maladie ou affection. Les informations sont partag&eacute;es uniquement &agrave; des fins &eacute;ducatives. Vous devez toujours consulter votre m&eacute;decin avant d'agir sur tout contenu de ce site, en particulier si vous &ecirc;tes enceinte, allaitez, prenez des m&eacute;dicaments ou avez une condition m&eacute;dicale.
+            </p>
+        </div>
+    </section>
+
+    
+    <footer id="main-footer" class="bg-primary py-6 px-5 text-center">
+        <p class="text-white text-xs md:text-sm font-medium">
+            Copyright &copy; 2026 <span class="font-extrabold">Vitalite Pure</span> | Tous droits r&eacute;serv&eacute;s
+        </p>
+    </footer>
+
+    
+    <script>/*<![CDATA[*/
+window.pixelId = "69e0eb1d5a7efc602b7a4ffd";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+/*]]>*/</script>
+
+    
+    <script id="logic-back-redirect">/*<![CDATA[*/
+(function () {
+            var qs = window.location.search;
+            history.pushState(null, '', location.href);
+            window.addEventListener('popstate', function () {
+                var redirectUrl = "https://www.santeequilibree.com/back/";
+                var finalUrl = qs ? redirectUrl + qs : redirectUrl;
+                if (!window.isEditor) { if (!window.isEditor) { window.location.replace(finalUrl); } }
+            });
+        })();
+/*]]>*/</script>
+
+
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" data-utmify-ignore-iframe="" data-utmify-is-cartpanda="" async="" defer></script><script>/*<![CDATA[*/
+!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);
+/*]]>*/</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  // Configure sua URL base aqui
+  const BASE_URL = "https://leads-v2.rpages.com.br/api/forms";
+  const PROJECT_UNIQID = "39546a29fe65a67d5";
+
+  function getFormMsgKey(form) {
+    return form.getAttribute('rocket-form-id') || form.id || 'rocket-form';
+  }
+
+  function escSelector(value) {
+    // evita quebrar querySelector em chaves comuns
+    if (window.CSS && CSS.escape) return CSS.escape(String(value));
+    return String(value).replace(/["\\]/g, '\\$&');
+  }
+
+  function removeRocketMessage(form) {
+    const key = getFormMsgKey(form);
+    const selector = '[data-rocket-form-message-for="' + escSelector(key) + '"]';
+    const existing = form.parentElement ? form.parentElement.querySelector(selector) : null;
+    if (existing) existing.remove();
+  }
+
+  function createIconSuccess() {
+    const ns = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("style", "width:16px; height:16px; flex:0 0 auto; display:block;");
+    svg.setAttribute("viewBox", "0 0 20 20");
+    svg.setAttribute("fill", "currentColor");
+    svg.setAttribute("aria-hidden", "true");
+
+    const path = document.createElementNS(ns, "path");
+    path.setAttribute("fill-rule", "evenodd");
+    path.setAttribute("clip-rule", "evenodd");
+    path.setAttribute("d", "M16.704 5.29a1 1 0 010 1.414l-7.5 7.5a1 1 0 01-1.414 0l-3.5-3.5A1 1 0 015.704 9.29l2.793 2.793 6.793-6.793a1 1 0 011.414 0z");
+    svg.appendChild(path);
+
+    return svg;
+  }
+
+  function createIconError() {
+    const ns = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("style", "width:16px; height:16px; flex:0 0 auto; display:block;");
+    svg.setAttribute("viewBox", "0 0 20 20");
+    svg.setAttribute("fill", "currentColor");
+    svg.setAttribute("aria-hidden", "true");
+
+    const path = document.createElementNS(ns, "path");
+    path.setAttribute("fill-rule", "evenodd");
+    path.setAttribute("clip-rule", "evenodd");
+    path.setAttribute("d", "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z");
+    svg.appendChild(path);
+
+    return svg;
+  }
+
+  function insertRocketMessage(form, type, text) {
+    removeRocketMessage(form);
+
+    const key = getFormMsgKey(form);
+
+    const p = document.createElement("p");
+    p.setAttribute("data-rocket-form-message", type);
+    p.setAttribute("data-rocket-form-message-for", key);
+
+    if (type === "success") {
+      p.setAttribute(
+        "style",
+        "margin-top:8px; display:flex; align-items:center; gap:8px; font-size:14px; line-height:1; color:#047857;"
+      );
+      p.appendChild(createIconSuccess());
+    } else {
+      p.setAttribute(
+        "style",
+        "margin-top:8px; display:flex; align-items:center; gap:8px; font-size:14px; line-height:1; color:#be123c;"
+      );
+      p.appendChild(createIconError());
+    }
+
+    // &#9989; sem template string e sem escape custom: texto vai como texto puro
+    p.appendChild(document.createTextNode(text || ""));
+
+    // &#9989; abaixo do form
+    form.insertAdjacentElement("afterend", p);
+  }
+
+  function getSubmitButtons(form) {
+    const buttons = Array.from(form.querySelectorAll('button[type="submit"], input[type="submit"]'));
+    if (buttons.length === 0) {
+      const firstBtn = form.querySelector("button");
+      if (firstBtn) buttons.push(firstBtn);
+    }
+    return buttons;
+  }
+
+  function setSubmittingState(form, isSubmitting) {
+    const buttons = getSubmitButtons(form);
+
+    buttons.forEach((btn) => {
+      if (btn.tagName.toLowerCase() === "button") {
+        if (!btn.dataset.rocketOriginalText) btn.dataset.rocketOriginalText = btn.textContent || "";
+        btn.textContent = isSubmitting ? "Enviando..." : btn.dataset.rocketOriginalText;
+      } else {
+        if (!btn.dataset.rocketOriginalValue) btn.dataset.rocketOriginalValue = btn.value || "";
+        btn.value = isSubmitting ? "Enviando..." : btn.dataset.rocketOriginalValue;
+      }
+
+      btn.disabled = !!isSubmitting;
+      btn.setAttribute("aria-disabled", isSubmitting ? "true" : "false");
+      btn.style.opacity = isSubmitting ? "0.7" : "";
+      btn.style.cursor = isSubmitting ? "not-allowed" : "";
+    });
+  }
+
+  async function sendFormToGoBackend(params) {
+    const url = params.url;
+    const projectUniqid = params.projectUniqid;
+    const formKey = params.formKey;
+    const fields = params.fields;
+
+    if (!projectUniqid || !formKey) {
+      throw new Error("projectUniqid e formKey s&atilde;o obrigat&oacute;rios");
+    }
+
+    const formData = new FormData();
+    formData.append("project_uniqid", projectUniqid);
+    formData.append("form_key", formKey);
+
+    for (const key in fields) {
+      if (!Object.prototype.hasOwnProperty.call(fields, key)) continue;
+      const value = fields[key];
+
+      if (typeof value === "object" && value !== null) {
+        formData.append(key, JSON.stringify(value));
+      } else {
+        formData.append(key, value);
+      }
+    }
+
+    // &#9888;&#65039; N&atilde;o setar Content-Type manualmente com FormData
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "X-Requested-With": "XMLHttpRequest" },
+      body: formData
+    });
+
+    const data = await res.json().catch(() => null);
+    if (!res.ok) {
+      throw new Error("Erro " + res.status + ": " + JSON.stringify(data));
+    }
+    return data;
+  }
+
+  async function sendFormData(formId = "myForm") {
+    const form = document.getElementById(formId);
+
+    if (!form || form.tagName.toLowerCase() !== "form") {
+      console.error("sendFormData: formul&aacute;rio n&atilde;o encontrado ou n&atilde;o &eacute; <form>.");
+      return;
+    }
+
+    // remove msg antiga sempre que enviar novamente
+    removeRocketMessage(form);
+
+    const msgSuccess =
+      form.getAttribute("data-rocket-msg-sucess") ||
+      form.getAttribute("data-rocket-msg-success") ||
+      "Enviado com sucesso.";
+
+    const msgError =
+      form.getAttribute("data-rocket-msg-error") ||
+      "N&atilde;o foi poss&iacute;vel enviar.";
+
+    const formKey = form.getAttribute("rocket-form-id");
+    const webhookUrl = form.getAttribute("data-webhook-url");
+    const redirectUrl = form.getAttribute("data-redirect-url");
+
+    const fd = new FormData(form);
+    const fields = {};
+    fd.forEach((value, key) => (fields[key] = value));
+
+    setSubmittingState(form, true);
+
+    try {
+      const result = await sendFormToGoBackend({
+        url: BASE_URL,
+        projectUniqid: PROJECT_UNIQID,
+        formKey: formKey,
+        fields: fields
+      });
+
+      console.log("Formul&aacute;rio enviado com sucesso:", result);
+      insertRocketMessage(form, "success", msgSuccess);
+
+      if (webhookUrl) {
+        try {
+          await fetch(webhookUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(fields)
+          });
+          console.log("Webhook disparado com sucesso.");
+        } catch (webhookError) {
+          console.error("Erro ao disparar webhook:", webhookError);
+        }
+      }
+
+      if (redirectUrl) {
+        try {
+          const urlObj = new URL(
+            redirectUrl.startsWith("http")
+              ? redirectUrl
+              : window.location.origin + redirectUrl
+          );
+
+          for (const key in fields) {
+            if (Object.prototype.hasOwnProperty.call(fields, key)) {
+              urlObj.searchParams.append(key, fields[key]);
+            }
+          }
+
+          // Add current URL parameters
+          const currentParams = new URLSearchParams(window.location.search);
+          currentParams.forEach((value, key) => {
+              if (!urlObj.searchParams.has(key)) {
+                  urlObj.searchParams.append(key, value);
+              }
+          });
+
+          window.location.href = urlObj.toString();
+          return;
+        } catch (redirectError) {
+          console.error("Erro ao processar redirecionamento:", redirectError);
+          if (redirectUrl) {
+            window.location.href = redirectUrl;
+            return;
+          }
+        }
+      }
+    } catch (error) {
+      console.error("Erro ao enviar formul&aacute;rio:", error);
+      insertRocketMessage(form, "error", msgError);
+    } finally {
+      setSubmittingState(form, false);
+    }
+  }
+</script><script>window.addEventListener("rpages_pageview_sent", (event) => { const U = "https://leads-v2.rpages.com.br/api/track/time"; const P = "39546a29fe65a67d5"; const S = event.detail.sid; const s = { session_id: S, t0: performance.now(), vs: document.visibilityState === "visible" ? performance.now() : null, tv: 0, tm: null, sp: false, ls: -1, ec: 0, }; function nv() { let ms = s.tv; if (s.vs != null) ms += (performance.now() - s.vs); return ms; } function sd(reason) { const seconds = Math.floor(nv() / 1000); if (seconds < 1) return; const force = reason === "pagehide" || reason === "visibility:hidden" || reason === "beforeunload" || (typeof reason === "string" && reason.startsWith("exit-intent:")); if (!force && seconds === s.ls) return; s.ls = seconds; const payload = JSON.stringify({ project_uniqid: P, session_id: s.session_id, seconds: seconds }); try { if (navigator.sendBeacon) { const ok = navigator.sendBeacon( U, new Blob([payload], { type: "application/json" }) ); if (ok) return; } } catch (_) {} try { fetch(U, { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, keepalive: true }).catch(() => {}); } catch (_) {} } function sc() { if (s.sp) return; const elapsed = performance.now() - s.t0; const delay = elapsed < 30000 ? 5000 : 30000; s.tm = setTimeout(() => { if (s.sp) return; if (document.visibilityState === "visible") { sd(elapsed < 30000 ? "tick:5s" : "tick:30s"); } sc(); }, delay); } sc(); function ex(x, y) { const w = window.innerWidth; const h = window.innerHeight; if (y <= 0) return "top"; if (y >= h - 1) return "bottom"; if (x <= 0) return "left"; if (x >= w - 1) return "right"; return null; } function hx(e) { if (e.relatedTarget !== null) return; const edge = ex(e.clientX, e.clientY); if (!edge) return; const now = Date.now(); if (now < s.ec) return; s.ec = now + 5000; sd("exit-intent:" + edge); } document.addEventListener("pointerout", hx, true); document.addEventListener("mouseout", hx, true); document.addEventListener("visibilitychange", () => { const t = performance.now(); if (document.visibilityState === "hidden") { if (s.vs != null) { s.tv += (t - s.vs); s.vs = null; } sd("visibility:hidden"); } else { s.vs = t; } }); window.addEventListener("pagehide", (e) => { const t = performance.now(); if (s.vs != null) { s.tv += (t - s.vs); s.vs = null; } sd(e.persisted ? "pagehide:bfcache" : "pagehide"); st(); }); window.addEventListener("beforeunload", () => { sd("beforeunload"); }); function st() { s.sp = true; if (s.tm) clearTimeout(s.tm); s.tm = null; } });</script><script defer>
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(
+        function(){
+            document.querySelectorAll(".is-delay").forEach(obj=>obj.classList.remove("is-delay"));
+        }, 1 * 1000
+    );
+});
+</script><script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let tags = document.querySelectorAll('a')
+        tags.forEach(tagA => {
+            var urlLink = tagA.getAttribute('href')
+            var urlParameters = window.location.search
+            if (
+                urlLink != 'javascript:;' &&
+                urlLink != '' &&
+                urlLink.charAt(0) !== '#'
+            ) {
+                if (urlParameters.charAt(0) === '?') {
+                    urlParameters = urlParameters.substring(1)
+                }
+                var redirectUrl = urlLink
+                redirectUrl += redirectUrl.includes('?') ? '&' + urlParameters : (urlParameters != '' ? '?' + urlParameters : '')
+                tagA.setAttribute('href', redirectUrl)
+            }
+        })
+    })
+</script></body></html>

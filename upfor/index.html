@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>   <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <style>
+        html, body { margin: 0; padding: 0; overflow-x: hidden; } 
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        
+        /* FIX: Remove focus outline from contenteditable elements in visual builder */
+        [contenteditable], 
+        [contenteditable]:focus, 
+        [contenteditable]:focus-visible {
+            outline: none !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+    </style>
+    
+<title data-rocket-custom-head="true">upfor</title><link rel="preconnect" href="https://fonts.rpages.com.br" crossorigin="" data-rocket-custom-head="true"><link rel="preload" href="https://fonts.rpages.com.br/fontsource/fonts/roboto@latest/latin-400-normal.woff2" as="font" type="font/woff2" crossorigin="" data-rocket-custom-head="true"><link rel="preload" href="https://fonts.rpages.com.br/fontsource/fonts/roboto@latest/latin-700-normal.woff2" as="font" type="font/woff2" crossorigin="" data-rocket-custom-head="true"><style data-component-type="RocketTheme" id="rocket-theme-config" data-rocket-custom-head="true">
+        :root {
+            --color-primary: #cc0000;
+            --color-secondary: #00cc44;
+            --color-accent: #ffcc00;
+            --color-background: #111111;
+            --color-text: #ffffff;
+            --font-sans: 'Roboto', sans-serif;
+        }
+    </style><style data-rocket-custom-head="true">
+        @font-face {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("https://fonts.rpages.com.br/fontsource/fonts/roboto@latest/latin-400-normal.woff2") format("woff2");
+        }
+        @font-face {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url("https://fonts.rpages.com.br/fontsource/fonts/roboto@latest/latin-700-normal.woff2") format("woff2");
+        }
+        body {
+            background-color: var(--color-background);
+            color: var(--color-text);
+            font-family: var(--font-sans);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+    </style><style type="text/tailwindcss" data-rocket-custom-head="true">
+        @theme {
+            --color-primary: var(--color-primary);
+            --color-secondary: var(--color-secondary);
+            --color-accent: var(--color-accent);
+            --color-background: var(--color-background);
+            --color-text: var(--color-text);
+            --font-sans: var(--font-sans);
+        }
+    </style><link rel="preload" href="https://cdn.converteai.net/c0f84c62-fef1-47dd-9b03-54235d14ec9c/6a2a06afe4a5fe038f638ef0/main.m3u8" as="fetch" crossorigin="anonymous" data-rocket-custom-head="true"><link rel="dns-prefetch" href="https://cdn.converteai.net" data-rocket-custom-head="true"><link rel="dns-prefetch" href="https://images.converteai.net" data-rocket-custom-head="true"><link rel="dns-prefetch" href="https://license.vturb.com" data-rocket-custom-head="true"><script src="https://app.kashpay.com.br/scripts/upsell-processor.js"></script><script>
+document.addEventListener("DOMContentLoaded", () => {
+    const COOKIE_NAME = 'rpages_sid';
+    const COOKIE_DAYS = 7;
+
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+        return null;
+    }
+
+    function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    function generateSid() {
+         return Date.now().toString(36) + Math.random().toString(36).substr(2);
+    }
+
+    let sid = getCookie(COOKIE_NAME);
+    if (!sid) {
+        sid = generateSid();
+        setCookie(COOKIE_NAME, sid, COOKIE_DAYS);
+    }
+
+    const baseEndpoint = "https://leads-v2.rpages.com.br/api/track/pageview/39546a2a06d671b4f";
+    const trackingUrl = new URL(baseEndpoint);
+    const currentParams = new URLSearchParams(window.location.search);
+
+    // Anexa todos os par&acirc;metros da URL atual (UTMs, etc) &agrave; URL de rastreamento
+    currentParams.forEach((value, key) => {
+        trackingUrl.searchParams.append(key, value);
+    });
+
+    const payload = {
+        ref: document.referrer || window.location.href,
+        sid: sid
+    };
+
+    navigator.sendBeacon(trackingUrl.toString(), new Blob([JSON.stringify(payload)], { type: "text/plain" }));
+
+    window.dispatchEvent(new CustomEvent('rpages_pageview_sent', { detail: { sid: sid } }));
+});
+</script><meta property="og:title" content="upfor"><meta property="og:description" content="Escreva sua descri&ccedil;&atilde;o aqui!"><meta property="og:url" content="https://xn--espacesant-k7a.site/upfor"><style>.is-delay{display: none!important; visibility: hidden!important;}</style><link rel="stylesheet" href="style.css"></head>
+<body class="bg-background text-text font-sans font-bold flex flex-col items-center"><header id="scarcity-header" class="fixed top-0 left-0 w-full bg-primary z-50 py-2 px-4 shadow-lg">
+        <p class="text-xs md:text-sm uppercase tracking-wide">
+            Only a few in <span id="user-city" class="text-accent font-bold">...</span> were selected don't miss this.
+        </p>
+    </header>
+
+    <main id="main-content" class="w-full max-w-4xl px-4 mt-20 md:mt-24 mb-12 flex flex-col items-center">
+        
+        <section id="impact-messages" class="space-y-4 md:space-y-6 mb-8">
+            <h1 class="text-accent text-2xl md:text-4xl uppercase leading-tight">
+                ARR&Ecirc;TEZ-VOUS ! AVERTISSEMENT IMPORTANT !!!
+            </h1>
+            
+            <div class="space-y-2 text-xl md:text-3xl uppercase leading-snug">
+                <p>
+                    VOUS <span class="text-secondary">N'AUREZ PLUS</span> CETTE
+                </p>
+                <p>
+                    OPPORTUNIT&Eacute; <span class="text-secondary">SI VOUS FERMEZ</span>
+                </p>
+                <p class="text-secondary">
+                    CETTE PAGE !
+                </p>
+            </div>
+        </section>
+
+        <section id="video-presentation" data-component-type="RocketScript" class="w-full flex flex-col items-center justify-center"><vturb-smartplayer id="vid-6a2a06b24d9c65785c25a477" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer> <script type="text/javascript">/*<![CDATA[*/
+var s=document.createElement("script"); s.src="https://scripts.converteai.net/c0f84c62-fef1-47dd-9b03-54235d14ec9c/players/6a2a06b24d9c65785c25a477/v4/player.js", s.async=!0,document.head.appendChild(s);
+/*]]>*/</script></section>
+
+    </main>
+
+    
+<div data-component-type="RocketScript" class="w-full flex flex-col items-center justify-center py-4 px-4 is-delay"><button onclick="acceptUpsell('https://app.kashpay.com.br/u/2244c0f475f6b48c')" style="font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 600; line-height: 1.3; color: #ffffff; background-color: #057932; border: none; border-radius: 10px; padding: 13px 7%; cursor: pointer; text-align: center; display: block; margin: 0 auto;" class="cursor-pointer">OUI ! JE VEUX &Eacute;QUILIBRER MES HORMONES</button>
+    
+</div>
+<section data-component-type="RocketScript" id="custom-html-block" class="w-full max-w-4xl mx-auto py-10 px-4 is-delay"><a href="https://xn--espacesant-k7a.site/upsix/" style="
+      display: block;
+      text-align: center;
+      margin: 12px auto 0;
+      color: #7f8ca3;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.4;
+      text-decoration: none;
+      font-weight: 400;
+      max-width: 650px;
+      transition: opacity .2s ease;
+   " onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+   NON, JE PR&Eacute;F&Egrave;RE CONTINUER &Agrave; SOUFFRIR DES SYMPT&Ocirc;MES DE LA M&Eacute;NOPAUSE
+</a></section><footer id="page-footer" class="pb-8 text-[10px] text-gray-500 uppercase opacity-50">
+        &copy; 2024 Tous droits r&eacute;serv&eacute;s.
+    </footer>
+
+    <script id="geolocation-logic">/*<![CDATA[*/
+if (!window.geoInitialized) {
+            window.geoInitialized = true;
+            
+            const fetchLocation = async () => {
+                const citySpan = document.getElementById('user-city');
+                try {
+                    const response = await fetch('https://ipapi.co/json/');
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    
+                    const data = await response.json();
+                    if (data && data.city) {
+                        citySpan.textContent = data.city;
+                    } else {
+                        citySpan.textContent = 'votre r&eacute;gion';
+                    }
+                } catch (error) {
+                    console.error('Geolocation error:', error);
+                    citySpan.textContent = 'votre r&eacute;gion';
+                }
+            };
+
+            fetchLocation();
+        }
+/*]]>*/</script>
+
+
+
+
+<script id="rocket-video-optimizer">/*<![CDATA[*/
+document.addEventListener("DOMContentLoaded", function() {
+                    var optimizeVideos = document.querySelectorAll('[data-component-type="RocketVideo"][data-provider="youtube"][data-optimize-loading="true"]');
+                    
+                    function loadVideo(video) {
+                        var ds = video.dataset;
+                        var videoId = ds.videoId;
+                        var queryParams = [];
+                        var isMute = ds.mute === 'true';
+                        var hideControls = ds.hideControls === 'true';
+                        var loop = ds.loop === 'true';
+                        var showRelated = ds.showRelated !== 'false';
+                        var shouldAutoplay = ds.autoplay === 'true';
+                        var ratio = ds.aspectRatio || '';
+                        var aspectClass = ratio === '9:16' ? 'aspect-[9/16]' : ratio === '4:3' ? 'aspect-[4/3]' : ratio === '1:1' ? 'aspect-square' : 'aspect-video';
+                        if (!ratio) {
+                            var aspectEl = video.querySelector('[class*="aspect-"]');
+                            if (aspectEl && aspectEl.className) {
+                                var match = aspectEl.className.match(/aspect-[[^]]+]|aspect-video|aspect-square/);
+                                if (match) aspectClass = match[0];
+                            }
+                        }
+
+                            // Always autoplay on click to start immediately
+                        queryParams.push('autoplay=1');
+                        if (isMute) queryParams.push('mute=1');
+                        if (hideControls) queryParams.push('controls=0');
+                        if (loop) {
+                            queryParams.push('loop=1');
+                            queryParams.push('playlist=' + videoId);
+                        }
+                        if (!showRelated) queryParams.push('rel=0');
+
+                        var queryString = queryParams.length ? '?' + queryParams.join('&') : '';
+                        
+                        video.innerHTML = '<div class="relative w-full ' + aspectClass + ' rounded-lg overflow-hidden shadow-lg group">' +
+                            '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + queryString + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-full object-cover rounded-lg"><\/iframe>' +
+                            '<\/div>';
+                    }
+                    
+                    // Create Intersection Observer for autoplay videos
+                    var intersectionObserver = new IntersectionObserver(function(entries) {
+                        entries.forEach(function(entry) {
+                            if (entry.isIntersecting) {
+                                loadVideo(entry.target);
+                                intersectionObserver.unobserve(entry.target);
+                            }
+                        });
+                    }, {
+                        threshold: 0.1  // Trigger when 10% of the element is visible
+                    });
+                    
+                    optimizeVideos.forEach(function(video) {
+                        // If autoplay is enabled, use Intersection Observer to load when visible
+                        if (video.dataset.autoplay === 'true') {
+                            intersectionObserver.observe(video);
+                        } else {
+                            // Otherwise, load on click
+                            video.addEventListener('click', function() {
+                                loadVideo(video);
+                            });
+                        }
+                    });
+                });
+/*]]>*/</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  // Configure sua URL base aqui
+  const BASE_URL = "https://leads-v2.rpages.com.br/api/forms";
+  const PROJECT_UNIQID = "39546a2a06d671b4f";
+
+  function getFormMsgKey(form) {
+    return form.getAttribute('rocket-form-id') || form.id || 'rocket-form';
+  }
+
+  function escSelector(value) {
+    // evita quebrar querySelector em chaves comuns
+    if (window.CSS && CSS.escape) return CSS.escape(String(value));
+    return String(value).replace(/["\\]/g, '\\$&');
+  }
+
+  function removeRocketMessage(form) {
+    const key = getFormMsgKey(form);
+    const selector = '[data-rocket-form-message-for="' + escSelector(key) + '"]';
+    const existing = form.parentElement ? form.parentElement.querySelector(selector) : null;
+    if (existing) existing.remove();
+  }
+
+  function createIconSuccess() {
+    const ns = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("style", "width:16px; height:16px; flex:0 0 auto; display:block;");
+    svg.setAttribute("viewBox", "0 0 20 20");
+    svg.setAttribute("fill", "currentColor");
+    svg.setAttribute("aria-hidden", "true");
+
+    const path = document.createElementNS(ns, "path");
+    path.setAttribute("fill-rule", "evenodd");
+    path.setAttribute("clip-rule", "evenodd");
+    path.setAttribute("d", "M16.704 5.29a1 1 0 010 1.414l-7.5 7.5a1 1 0 01-1.414 0l-3.5-3.5A1 1 0 015.704 9.29l2.793 2.793 6.793-6.793a1 1 0 011.414 0z");
+    svg.appendChild(path);
+
+    return svg;
+  }
+
+  function createIconError() {
+    const ns = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("style", "width:16px; height:16px; flex:0 0 auto; display:block;");
+    svg.setAttribute("viewBox", "0 0 20 20");
+    svg.setAttribute("fill", "currentColor");
+    svg.setAttribute("aria-hidden", "true");
+
+    const path = document.createElementNS(ns, "path");
+    path.setAttribute("fill-rule", "evenodd");
+    path.setAttribute("clip-rule", "evenodd");
+    path.setAttribute("d", "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z");
+    svg.appendChild(path);
+
+    return svg;
+  }
+
+  function insertRocketMessage(form, type, text) {
+    removeRocketMessage(form);
+
+    const key = getFormMsgKey(form);
+
+    const p = document.createElement("p");
+    p.setAttribute("data-rocket-form-message", type);
+    p.setAttribute("data-rocket-form-message-for", key);
+
+    if (type === "success") {
+      p.setAttribute(
+        "style",
+        "margin-top:8px; display:flex; align-items:center; gap:8px; font-size:14px; line-height:1; color:#047857;"
+      );
+      p.appendChild(createIconSuccess());
+    } else {
+      p.setAttribute(
+        "style",
+        "margin-top:8px; display:flex; align-items:center; gap:8px; font-size:14px; line-height:1; color:#be123c;"
+      );
+      p.appendChild(createIconError());
+    }
+
+    // &#9989; sem template string e sem escape custom: texto vai como texto puro
+    p.appendChild(document.createTextNode(text || ""));
+
+    // &#9989; abaixo do form
+    form.insertAdjacentElement("afterend", p);
+  }
+
+  function getSubmitButtons(form) {
+    const buttons = Array.from(form.querySelectorAll('button[type="submit"], input[type="submit"]'));
+    if (buttons.length === 0) {
+      const firstBtn = form.querySelector("button");
+      if (firstBtn) buttons.push(firstBtn);
+    }
+    return buttons;
+  }
+
+  function setSubmittingState(form, isSubmitting) {
+    const buttons = getSubmitButtons(form);
+
+    buttons.forEach((btn) => {
+      if (btn.tagName.toLowerCase() === "button") {
+        if (!btn.dataset.rocketOriginalText) btn.dataset.rocketOriginalText = btn.textContent || "";
+        btn.textContent = isSubmitting ? "Enviando..." : btn.dataset.rocketOriginalText;
+      } else {
+        if (!btn.dataset.rocketOriginalValue) btn.dataset.rocketOriginalValue = btn.value || "";
+        btn.value = isSubmitting ? "Enviando..." : btn.dataset.rocketOriginalValue;
+      }
+
+      btn.disabled = !!isSubmitting;
+      btn.setAttribute("aria-disabled", isSubmitting ? "true" : "false");
+      btn.style.opacity = isSubmitting ? "0.7" : "";
+      btn.style.cursor = isSubmitting ? "not-allowed" : "";
+    });
+  }
+
+  async function sendFormToGoBackend(params) {
+    const url = params.url;
+    const projectUniqid = params.projectUniqid;
+    const formKey = params.formKey;
+    const fields = params.fields;
+
+    if (!projectUniqid || !formKey) {
+      throw new Error("projectUniqid e formKey s&atilde;o obrigat&oacute;rios");
+    }
+
+    const formData = new FormData();
+    formData.append("project_uniqid", projectUniqid);
+    formData.append("form_key", formKey);
+
+    for (const key in fields) {
+      if (!Object.prototype.hasOwnProperty.call(fields, key)) continue;
+      const value = fields[key];
+
+      if (typeof value === "object" && value !== null) {
+        formData.append(key, JSON.stringify(value));
+      } else {
+        formData.append(key, value);
+      }
+    }
+
+    // &#9888;&#65039; N&atilde;o setar Content-Type manualmente com FormData
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "X-Requested-With": "XMLHttpRequest" },
+      body: formData
+    });
+
+    const data = await res.json().catch(() => null);
+    if (!res.ok) {
+      throw new Error("Erro " + res.status + ": " + JSON.stringify(data));
+    }
+    return data;
+  }
+
+  async function sendFormData(formId = "myForm") {
+    const form = document.getElementById(formId);
+
+    if (!form || form.tagName.toLowerCase() !== "form") {
+      console.error("sendFormData: formul&aacute;rio n&atilde;o encontrado ou n&atilde;o &eacute; <form>.");
+      return;
+    }
+
+    // remove msg antiga sempre que enviar novamente
+    removeRocketMessage(form);
+
+    const msgSuccess =
+      form.getAttribute("data-rocket-msg-sucess") ||
+      form.getAttribute("data-rocket-msg-success") ||
+      "Enviado com sucesso.";
+
+    const msgError =
+      form.getAttribute("data-rocket-msg-error") ||
+      "N&atilde;o foi poss&iacute;vel enviar.";
+
+    const formKey = form.getAttribute("rocket-form-id");
+    const webhookUrl = form.getAttribute("data-webhook-url");
+    const redirectUrl = form.getAttribute("data-redirect-url");
+
+    const fd = new FormData(form);
+    const fields = {};
+    fd.forEach((value, key) => (fields[key] = value));
+
+    setSubmittingState(form, true);
+
+    try {
+      const result = await sendFormToGoBackend({
+        url: BASE_URL,
+        projectUniqid: PROJECT_UNIQID,
+        formKey: formKey,
+        fields: fields
+      });
+
+      console.log("Formul&aacute;rio enviado com sucesso:", result);
+      insertRocketMessage(form, "success", msgSuccess);
+
+      if (webhookUrl) {
+        try {
+          await fetch(webhookUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(fields)
+          });
+          console.log("Webhook disparado com sucesso.");
+        } catch (webhookError) {
+          console.error("Erro ao disparar webhook:", webhookError);
+        }
+      }
+
+      if (redirectUrl) {
+        try {
+          const urlObj = new URL(
+            redirectUrl.startsWith("http")
+              ? redirectUrl
+              : window.location.origin + redirectUrl
+          );
+
+          for (const key in fields) {
+            if (Object.prototype.hasOwnProperty.call(fields, key)) {
+              urlObj.searchParams.append(key, fields[key]);
+            }
+          }
+
+          // Add current URL parameters
+          const currentParams = new URLSearchParams(window.location.search);
+          currentParams.forEach((value, key) => {
+              if (!urlObj.searchParams.has(key)) {
+                  urlObj.searchParams.append(key, value);
+              }
+          });
+
+          window.location.href = urlObj.toString();
+          return;
+        } catch (redirectError) {
+          console.error("Erro ao processar redirecionamento:", redirectError);
+          if (redirectUrl) {
+            window.location.href = redirectUrl;
+            return;
+          }
+        }
+      }
+    } catch (error) {
+      console.error("Erro ao enviar formul&aacute;rio:", error);
+      insertRocketMessage(form, "error", msgError);
+    } finally {
+      setSubmittingState(form, false);
+    }
+  }
+</script><script>window.addEventListener("rpages_pageview_sent", (event) => { const U = "https://leads-v2.rpages.com.br/api/track/time"; const P = "39546a2a06d671b4f"; const S = event.detail.sid; const s = { session_id: S, t0: performance.now(), vs: document.visibilityState === "visible" ? performance.now() : null, tv: 0, tm: null, sp: false, ls: -1, ec: 0, }; function nv() { let ms = s.tv; if (s.vs != null) ms += (performance.now() - s.vs); return ms; } function sd(reason) { const seconds = Math.floor(nv() / 1000); if (seconds < 1) return; const force = reason === "pagehide" || reason === "visibility:hidden" || reason === "beforeunload" || (typeof reason === "string" && reason.startsWith("exit-intent:")); if (!force && seconds === s.ls) return; s.ls = seconds; const payload = JSON.stringify({ project_uniqid: P, session_id: s.session_id, seconds: seconds }); try { if (navigator.sendBeacon) { const ok = navigator.sendBeacon( U, new Blob([payload], { type: "application/json" }) ); if (ok) return; } } catch (_) {} try { fetch(U, { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, keepalive: true }).catch(() => {}); } catch (_) {} } function sc() { if (s.sp) return; const elapsed = performance.now() - s.t0; const delay = elapsed < 30000 ? 5000 : 30000; s.tm = setTimeout(() => { if (s.sp) return; if (document.visibilityState === "visible") { sd(elapsed < 30000 ? "tick:5s" : "tick:30s"); } sc(); }, delay); } sc(); function ex(x, y) { const w = window.innerWidth; const h = window.innerHeight; if (y <= 0) return "top"; if (y >= h - 1) return "bottom"; if (x <= 0) return "left"; if (x >= w - 1) return "right"; return null; } function hx(e) { if (e.relatedTarget !== null) return; const edge = ex(e.clientX, e.clientY); if (!edge) return; const now = Date.now(); if (now < s.ec) return; s.ec = now + 5000; sd("exit-intent:" + edge); } document.addEventListener("pointerout", hx, true); document.addEventListener("mouseout", hx, true); document.addEventListener("visibilitychange", () => { const t = performance.now(); if (document.visibilityState === "hidden") { if (s.vs != null) { s.tv += (t - s.vs); s.vs = null; } sd("visibility:hidden"); } else { s.vs = t; } }); window.addEventListener("pagehide", (e) => { const t = performance.now(); if (s.vs != null) { s.tv += (t - s.vs); s.vs = null; } sd(e.persisted ? "pagehide:bfcache" : "pagehide"); st(); }); window.addEventListener("beforeunload", () => { sd("beforeunload"); }); function st() { s.sp = true; if (s.tm) clearTimeout(s.tm); s.tm = null; } });</script><script defer>
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(
+        function(){
+            document.querySelectorAll(".is-delay").forEach(obj=>obj.classList.remove("is-delay"));
+        }, 215 * 1000
+    );
+});
+</script><script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let tags = document.querySelectorAll('a')
+        tags.forEach(tagA => {
+            var urlLink = tagA.getAttribute('href')
+            var urlParameters = window.location.search
+            if (
+                urlLink != 'javascript:;' &&
+                urlLink != '' &&
+                urlLink.charAt(0) !== '#'
+            ) {
+                if (urlParameters.charAt(0) === '?') {
+                    urlParameters = urlParameters.substring(1)
+                }
+                var redirectUrl = urlLink
+                redirectUrl += redirectUrl.includes('?') ? '&' + urlParameters : (urlParameters != '' ? '?' + urlParameters : '')
+                tagA.setAttribute('href', redirectUrl)
+            }
+        })
+    })
+</script></body></html>
