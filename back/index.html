@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vitalite Pure">
+<meta property="og:description" content="Offre speciale Vitalite Pure">
+<title>Vitalite Pure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    html{scroll-behavior:smooth}
+    body{margin:0;padding:0;background-color:#fff;overflow-x:hidden;font-family:Roboto,sans-serif}
+    h2{font-family:Poppins,sans-serif;margin:0}
+    img{max-width:100%}
+    .coupon-box{border:1px solid #8b9c0d;border-radius:16px;margin:0;padding:3vh 20vw;background-color:#540e0e}
+    .offer-box{border:4px solid #8f9905;border-radius:16px;margin:0;padding:3vh 20vw;background-color:#540e0e}
+    .cta-box{border:4px solid #8f9905;border-radius:16px;margin:0;padding:.01vh 20vw;background-color:#540e0e}
+    @media (max-width:1200px){
+        .coupon-box,.offer-box{padding:2.25vh 15vw}
+        .cta-box{padding:.001vh 15vw}
+    }
+    @media (max-width:600px){
+        .coupon-box,.offer-box{padding:1.5vh 1.5vw}
+        .cta-box{padding:.75vh .75vw}
+    }
+    .coupon-headline{font-size:1.65vw;text-align:center;padding:2vh 0;color:#000;line-height:1.1;font-weight:400}
+    .offer-text{font-size:1.65vw;text-align:center;padding:2vh 0;color:#fffcfc;line-height:1.1;font-weight:400}
+    @media (max-width:1200px){
+        .coupon-headline,.offer-text{font-size:2.5vw;padding:1.5vh 0}
+    }
+    @media (max-width:600px){
+        .coupon-headline,.offer-text{font-size:4.5vw;padding:1.5vh 0}
+    }
+    .cta-button{background-color:#0d0;border-radius:32px;border:none;color:#fff;padding:16px 32px;font-weight:600;font-family:Montserrat,sans-serif;display:block;width:fit-content;text-align:center;margin:2vh auto;font-size:1.49vw;cursor:pointer}
+    @media (max-width:1200px){.cta-button{font-size:2.25vw}}
+    @media (max-width:640px){.cta-button{font-size:4.5vw}}
+    .zooming{animation:zooming 1.25s ease infinite}
+    @keyframes zooming{0%{transform:scale(1,1)}50%{transform:scale(1.1,1.1)}100%{transform:scale(1,1)}}
+</style>
+</head>
+<body>
+
+    <div class="coupon-box">
+        <div class="coupon-headline">
+            <h2><span style="background-color:#ff0">&nbsp;<b>CUPOM ESPECIAL ATIVADO POR</b>&nbsp;</span><br>&nbsp;<span style="background-color:#ff0">&nbsp;<b>15 MINUTOS!</b>&nbsp;</span></h2>
+        </div>
+    </div>
+
+    <div class="offer-box">
+        <div class="offer-text">
+            <h2>
+                🎉 CUPOM DE DESCONTO ATIVADO PARA VOCÊ!<br><br>
+                Antes de você sair, queremos te oferecer uma condição especial no Vitalite Pure.<br><br>
+                Não queremos que o dinheiro seja um obstáculo para você alcançar o corpo que deseja...<br><br>
+                Por isso, preparamos uma oferta exclusiva para quem chegou até aqui.<br><br>
+                Com o Vitalite Pure, você tem acesso aos mesmos recursos que já ajudaram milhares de pessoas a atingir seus objetivos de forma segura...<br><br>
+                Aproveite esta condição especial e comece hoje mesmo sua transformação...<br><br>
+                <span style="background-color:#43c608">De&nbsp;<del>47</del>&nbsp;€ por apenas 27 €</span>
+            </h2>
+        </div>
+    </div>
+
+    <div class="cta-box">
+        <p class="cta-button zooming" id="cta-1">COMPRAR AGORA!</p>
+    </div>
+
+    <div class="offer-box">
+        <div class="offer-text">
+            <h2>
+                Esta pode ser a virada de chave que faltava na sua rotina...<br><br>
+                O Vitalite Pure foi criado para te acompanhar em cada etapa dessa jornada, com resultados reais e consistentes...<br><br>
+                Você merece essa oportunidade...<br><br>
+                Não deixe a dúvida atrapalhar o resultado que você já podia estar vendo...<br><br>
+                <span style="background-color:#26bb06">De&nbsp;<del>47</del>&nbsp;€ por apenas 27 €</span>
+            </h2>
+        </div>
+    </div>
+
+    <div class="cta-box">
+        <p class="cta-button zooming" id="cta-2">COMPRAR AGORA!</p>
+    </div>
+
+
+<script>
+    var CHECKOUT_URL = "https://checkout.kashpay.com.br/checkout/checkout-1781483307195";
+    document.getElementById("cta-1").addEventListener("click", function () {
+        window.location.href = CHECKOUT_URL;
+    });
+    document.getElementById("cta-2").addEventListener("click", function () {
+        window.location.href = CHECKOUT_URL;
+    });
+</script>
+</body>
+</html>

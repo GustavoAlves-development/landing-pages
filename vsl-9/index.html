@@ -301,7 +301,7 @@ window.pixelId = "69e0eb1d5a7efc602b7a4ffd";
             var qs = window.location.search;
             history.pushState(null, '', location.href);
             window.addEventListener('popstate', function () {
-                var redirectUrl = "https://www.santeequilibree.com/back/";
+                var redirectUrl = "https://portailsante.site/back/";
                 var finalUrl = qs ? redirectUrl + qs : redirectUrl;
                 if (!window.isEditor) { if (!window.isEditor) { window.location.replace(finalUrl); } }
             });
