@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const trackingUrl = new URL(baseEndpoint);
     const currentParams = new URLSearchParams(window.location.search);
 
-    // Anexa todos os par&acirc;metros da URL atual (UTMs, etc) &agrave; URL de rastreamento
+    // Anexa todos os parâmetros da URL atual (UTMs, etc) à URL de rastreamento
     currentParams.forEach((value, key) => {
         trackingUrl.searchParams.append(key, value);
     });
@@ -107,11 +107,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.dispatchEvent(new CustomEvent('rpages_pageview_sent', { detail: { sid: sid } }));
 });
-</script><meta property="og:title" content="uptwo"><meta property="og:description" content="Escreva sua descri&ccedil;&atilde;o aqui!"><meta property="og:url" content="https://portailsante.site/uptwo"><style>.is-delay{display: none!important; visibility: hidden!important;}</style><link rel="stylesheet" href="style.css"></head>
+</script><meta property="og:title" content="uptwo"><meta property="og:description" content="Escreva sua descrição aqui!"><meta property="og:url" content="https://portailsante.site/uptwo"><style>.is-delay{display: none!important; visibility: hidden!important;}</style><link rel="stylesheet" href="style.css"></head>
 <body class="flex flex-col items-center min-h-screen"><nav id="progress-bar-container" class="w-full h-10 flex border-b border-white/10 sticky top-0 z-50">
         <div class="w-[70%] bg-primary flex items-center justify-center" style="transition: width 2s ease-in-out;">
             <span class="text-black font-bold text-sm md:text-base px-4">
-                Il ne reste plus qu'une &eacute;tape &gt;
+                Il ne reste plus qu'une étape &gt;
             </span>
         </div>
         <div class="w-[30%] bg-white"></div>
@@ -124,12 +124,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 Vous ne verrez cette page qu'une seule fois (et pour toujours).
             </p>
             <h1 class="text-white text-2xl md:text-4xl font-bold leading-tight max-w-2xl mx-auto">
-                Regardez la vid&eacute;o ci-dessous et soyez tr&egrave;s attentif &agrave; la r&eacute;v&eacute;lation que j'ai &agrave; vous partager...
+                Regardez la vidéo ci-dessous et soyez très attentif à la révélation que j'ai à vous partager...
             </h1>
             <div class="pt-2">
                 <p class="text-accent font-bold text-xl inline">IMPORTANT : </p>
                 <p class="text-white text-base md:text-lg inline">
-                    Si vous fermez cette page ou cliquez sur le bouton retour de votre navigateur, votre achat pourrait rencontrer des probl&egrave;mes.
+                    Si vous fermez cette page ou cliquez sur le bouton retour de votre navigateur, votre achat pourrait rencontrer des problèmes.
                 </p>
             </div>
         </section>
@@ -139,16 +139,18 @@ var s=document.createElement("script"); s.src="https://scripts.converteai.net/c0
 /*]]>*/</script></section>
 
         <section id="cta-section" class="w-full max-w-[450px] space-y-6">
-    <button onclick="acceptUpsell('https://app.kashpay.com.br/u/8a7e1094dbaddbfc')" class="cursor-pointer block w-full bg-[#057932] hover:bg-green-600 transform hover:scale-[1.02] transition-all duration-300 rounded-xl shadow-[0_0_20px_rgba(34,197,94,0.3)] text-white text-[18px] font-semibold leading-[1.3] text-center py-[13px] px-[7%] is-delay" style="font-family: 'Poppins';">
-        OUI ! JE VEUX BR&Ucirc;LER LES GRAISSES 7X PLUS VITE
-    </button>
+            <!-- BOTÃO PRINCIPAL: Carrega imediatamente (sem a classe is-delay) -->
+            <button onclick="acceptUpsell('https://app.kashpay.com.br/u/8a7e1094dbaddbfc')" class="cursor-pointer block w-full bg-[#057932] hover:bg-green-600 transform hover:scale-[1.02] transition-all duration-300 rounded-xl shadow-[0_0_20px_rgba(34,197,94,0.3)] text-white text-[18px] font-semibold leading-[1.3] text-center py-[13px] px-[7%]" style="font-family: 'Poppins';">
+                OUI ! JE VEUX BR&Ucirc;LER LES GRAISSES 7X PLUS VITE
+            </button>
 
-    <div class="flex justify-center">
-        <a href="https://portailsante.site/upfor/" class="cursor-pointer text-white/40 hover:text-white/80 transition-colors text-sm underline-offset-4 hover:underline is-delay">
-            Non merci, je ne veux pas profiter de cette opportunit&eacute; unique
-        </a>
-    </div>
-</section>
+            <div class="flex justify-center">
+                <!-- LINK DE RECUSA: Mantém o is-delay para aguardar os 3 minutos -->
+                <a href="https://portailsante.site/upfor/" class="cursor-pointer text-white/40 hover:text-white/80 transition-colors text-sm underline-offset-4 hover:underline is-delay">
+                    Non merci, je ne veux pas profiter de cette opportunit&eacute; unique
+                </a>
+            </div>
+        </section>
 
     </main>
 
@@ -160,13 +162,13 @@ var s=document.createElement("script"); s.src="https://scripts.converteai.net/c0
 if (!window.otoInitialized) {
             window.otoInitialized = true;
             
-            // L&oacute;gica simples para anima&ccedil;&atilde;o sutil na barra de progresso (opcional)
+            // Lógica simples para animação sutil na barra de progresso (opcional)
             const progressBar = document.querySelector('#progress-bar-container div:first-child');
             if (progressBar) {
                 progressBar.style.transition = "width 2s ease-in-out";
             }
 
-            // Preven&ccedil;&atilde;o de fechamento acidental (opcional conforme pedido no copy)
+            // Prevenção de fechamento acidental (opcional conforme pedido no copy)
             window.addEventListener('beforeunload', function (e) {
                 // Apenas um lembrete visual, navegadores modernos limitam o texto customizado
                 e.preventDefault();
@@ -174,39 +176,6 @@ if (!window.otoInitialized) {
             });
         }
 /*]]>*/</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script>
   // Configure sua URL base aqui
@@ -218,7 +187,6 @@ if (!window.otoInitialized) {
   }
 
   function escSelector(value) {
-    // evita quebrar querySelector em chaves comuns
     if (window.CSS && CSS.escape) return CSS.escape(String(value));
     return String(value).replace(/["\\]/g, '\\$&');
   }
@@ -287,10 +255,7 @@ if (!window.otoInitialized) {
       p.appendChild(createIconError());
     }
 
-    // &#9989; sem template string e sem escape custom: texto vai como texto puro
     p.appendChild(document.createTextNode(text || ""));
-
-    // &#9989; abaixo do form
     form.insertAdjacentElement("afterend", p);
   }
 
@@ -329,7 +294,7 @@ if (!window.otoInitialized) {
     const fields = params.fields;
 
     if (!projectUniqid || !formKey) {
-      throw new Error("projectUniqid e formKey s&atilde;o obrigat&oacute;rios");
+      throw new Error("projectUniqid e formKey são obrigatórios");
     }
 
     const formData = new FormData();
@@ -347,7 +312,6 @@ if (!window.otoInitialized) {
       }
     }
 
-    // &#9888;&#65039; N&atilde;o setar Content-Type manualmente com FormData
     const res = await fetch(url, {
       method: "POST",
       headers: { "X-Requested-With": "XMLHttpRequest" },
@@ -365,11 +329,10 @@ if (!window.otoInitialized) {
     const form = document.getElementById(formId);
 
     if (!form || form.tagName.toLowerCase() !== "form") {
-      console.error("sendFormData: formul&aacute;rio n&atilde;o encontrado ou n&atilde;o &eacute; <form>.");
+      console.error("sendFormData: formulário não encontrado ou não é <form>.");
       return;
     }
 
-    // remove msg antiga sempre que enviar novamente
     removeRocketMessage(form);
 
     const msgSuccess =
@@ -379,7 +342,7 @@ if (!window.otoInitialized) {
 
     const msgError =
       form.getAttribute("data-rocket-msg-error") ||
-      "N&atilde;o foi poss&iacute;vel enviar.";
+      "Não foi possível enviar.";
 
     const formKey = form.getAttribute("rocket-form-id");
     const webhookUrl = form.getAttribute("data-webhook-url");
@@ -399,7 +362,7 @@ if (!window.otoInitialized) {
         fields: fields
       });
 
-      console.log("Formul&aacute;rio enviado com sucesso:", result);
+      console.log("Formulário enviado com sucesso:", result);
       insertRocketMessage(form, "success", msgSuccess);
 
       if (webhookUrl) {
@@ -429,7 +392,6 @@ if (!window.otoInitialized) {
             }
           }
 
-          // Add current URL parameters
           const currentParams = new URLSearchParams(window.location.search);
           currentParams.forEach((value, key) => {
               if (!urlObj.searchParams.has(key)) {
@@ -448,21 +410,26 @@ if (!window.otoInitialized) {
         }
       }
     } catch (error) {
-      console.error("Erro ao enviar formul&aacute;rio:", error);
+      console.error("Erro ao enviar formulário:", error);
       insertRocketMessage(form, "error", msgError);
     } finally {
       setSubmittingState(form, false);
     }
   }
-</script><script>window.addEventListener("rpages_pageview_sent", (event) => { const U = "https://leads-v2.rpages.com.br/api/track/time"; const P = "39546a2a037ead1f4"; const S = event.detail.sid; const s = { session_id: S, t0: performance.now(), vs: document.visibilityState === "visible" ? performance.now() : null, tv: 0, tm: null, sp: false, ls: -1, ec: 0, }; function nv() { let ms = s.tv; if (s.vs != null) ms += (performance.now() - s.vs); return ms; } function sd(reason) { const seconds = Math.floor(nv() / 1000); if (seconds < 1) return; const force = reason === "pagehide" || reason === "visibility:hidden" || reason === "beforeunload" || (typeof reason === "string" && reason.startsWith("exit-intent:")); if (!force && seconds === s.ls) return; s.ls = seconds; const payload = JSON.stringify({ project_uniqid: P, session_id: s.session_id, seconds: seconds }); try { if (navigator.sendBeacon) { const ok = navigator.sendBeacon( U, new Blob([payload], { type: "application/json" }) ); if (ok) return; } } catch (_) {} try { fetch(U, { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, keepalive: true }).catch(() => {}); } catch (_) {} } function sc() { if (s.sp) return; const elapsed = performance.now() - s.t0; const delay = elapsed < 30000 ? 5000 : 30000; s.tm = setTimeout(() => { if (s.sp) return; if (document.visibilityState === "visible") { sd(elapsed < 30000 ? "tick:5s" : "tick:30s"); } sc(); }, delay); } sc(); function ex(x, y) { const w = window.innerWidth; const h = window.innerHeight; if (y <= 0) return "top"; if (y >= h - 1) return "bottom"; if (x <= 0) return "left"; if (x >= w - 1) return "right"; return null; } function hx(e) { if (e.relatedTarget !== null) return; const edge = ex(e.clientX, e.clientY); if (!edge) return; const now = Date.now(); if (now < s.ec) return; s.ec = now + 5000; sd("exit-intent:" + edge); } document.addEventListener("pointerout", hx, true); document.addEventListener("mouseout", hx, true); document.addEventListener("visibilitychange", () => { const t = performance.now(); if (document.visibilityState === "hidden") { if (s.vs != null) { s.tv += (t - s.vs); s.vs = null; } sd("visibility:hidden"); } else { s.vs = t; } }); window.addEventListener("pagehide", (e) => { const t = performance.now(); if (s.vs != null) { s.tv += (t - s.vs); s.vs = null; } sd(e.persisted ? "pagehide:bfcache" : "pagehide"); st(); }); window.addEventListener("beforeunload", () => { sd("beforeunload"); }); function st() { s.sp = true; if (s.tm) clearTimeout(s.tm); s.tm = null; } });</script><script defer>
+</script><script>window.addEventListener("rpages_pageview_sent", (event) => { const U = "https://leads-v2.rpages.com.br/api/track/time"; const P = "39546a2a037ead1f4"; const S = event.detail.sid; const s = { session_id: S, t0: performance.now(), vs: document.visibilityState === "visible" ? performance.now() : null, tv: 0, tm: null, sp: false, ls: -1, ec: 0, }; function nv() { let ms = s.tv; if (s.vs != null) ms += (performance.now() - s.vs); return ms; } function sd(reason) { const seconds = Math.floor(nv() / 1000); if (seconds < 1) return; const force = reason === "pagehide" || reason === "visibility:hidden" || reason === "beforeunload" || (typeof reason === "string" && reason.startsWith("exit-intent:")); if (!force && seconds === s.ls) return; s.ls = seconds; const payload = JSON.stringify({ project_uniqid: P, session_id: s.session_id, seconds: seconds }); try { if (navigator.sendBeacon) { const ok = navigator.sendBeacon( U, new Blob([payload], { type: "application/json" }) ); if (ok) return; } } catch (_) {} try { fetch(U, { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, keepalive: true }).catch(() => {}); } catch (_) {} } function sc() { if (s.sp) return; const elapsed = performance.now() - s.t0; const delay = elapsed < 30000 ? 5000 : 30000; s.tm = setTimeout(() => { if (s.sp) return; if (document.visibilityState === "visible") { sd(elapsed < 30000 ? "tick:5s" : "tick:30s"); } sc(); }, delay); } sc(); function ex(x, y) { const w = window.innerWidth; const h = window.innerHeight; if (y <= 0) return "top"; if (y >= h - 1) return "bottom"; if (x <= 0) return "left"; if (x >= w - 1) return "right"; return null; } function hx(e) { if (e.relatedTarget !== null) return; const edge = ex(e.clientX, e.clientY); if (!edge) return; const now = Date.now(); if (now < s.ec) return; s.ec = now + 5000; sd("exit-intent:" + edge); } document.addEventListener("pointerout", hx, true); document.addEventListener("mouseout", hx, true); document.addEventListener("visibilitychange", () => { const t = performance.now(); if (document.visibilityState === "hidden") { if (s.vs != null) { s.tv += (t - s.vs); s.vs = null; } sd("visibility:hidden"); } else { s.vs = t; } }); window.addEventListener("pagehide", (e) => { const t = performance.now(); if (s.vs != null) { s.tv += (t - s.vs); s.vs = null; } sd(e.persisted ? "pagehide:bfcache" : "pagehide"); st(); }); window.addEventListener("beforeunload", () => { sd("beforeunload"); }); function st() { s.sp = true; if (s.tm) clearTimeout(s.tm); s.tm = null; } });</script>
+
+<script defer>
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(
         function(){
+            // Esse script agora vai rodar após 180 segundos (3 minutos)
             document.querySelectorAll(".is-delay").forEach(obj=>obj.classList.remove("is-delay"));
-        }, 300 * 1000
+        }, 180 * 1000 // 180 segundos = 3 minutos
     );
 });
-</script><script>
+</script>
+
+<script>
     document.addEventListener('DOMContentLoaded', function () {
         let tags = document.querySelectorAll('a')
         tags.forEach(tagA => {
