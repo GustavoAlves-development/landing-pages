@@ -258,6 +258,13 @@ document.addEventListener("DOMContentLoaded", () => {
     <button type="button" class="cursor-pointer block w-full font-bold text-xl md:text-2xl py-6 px-8 rounded-[10px] shadow-xl transition-all transform hover:scale-105 animate-cta-pulse uppercase" onclick="acceptUpsell('https://app.kashpay.com.br/u/7324dfcb54c79660')" style="font-family: 'Poppins'; font-size: 18px; font-weight: 600; line-height: 1.3; color: #ffffff; background-color: #057932; border: none; border-radius: 10px; padding: 13px 7%; cursor: pointer; text-align: center; display: block; margin: auto;">
         OUI, JE VEUX RETROUVER UNE PEAU FERME ET TONIQUE
     </button>
+
+    <!-- LINK DE RECUSA: aparece apos 30 segundos -->
+    <div class="flex justify-center mt-4">
+        <a href="https://apple-cider-vinegar.vercel.app/lessons" class="cursor-pointer text-white/40 hover:text-white/80 transition-colors text-sm underline-offset-4 hover:underline is-delay">
+            Non merci, je ne veux pas profiter de cette opportunit&eacute; unique
+        </a>
+    </div>
 </div>
 
             <footer class="pt-12 text-slate-500 text-sm">
@@ -554,7 +561,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(
         function(){
             document.querySelectorAll(".is-delay").forEach(obj=>obj.classList.remove("is-delay"));
-        }, 1 * 1000
+        }, 30 * 1000
     );
 });
 </script><script>
