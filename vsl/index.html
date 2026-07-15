@@ -148,6 +148,33 @@ document.addEventListener("DOMContentLoaded", () => {
         </h2>
     </header>
 
+    <div id="city-alert-banner" class="bg-accent py-3 px-5 text-center">
+        <p class="text-white text-sm md:text-base font-bold leading-snug max-w-2xl mx-auto flex items-center justify-center gap-2">
+            <span aria-hidden="true">⚠</span>
+            <span>Vous et quelques personnes de <span id="vsl-cidade">votre région</span> avez été sélectionné(e)s pour voir cette présentation.</span>
+        </p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-600 text-yellow-900 mx-5 md:mx-auto md:max-w-2xl mt-4 p-4 rounded">
+        <p class="text-sm md:text-base font-bold leading-snug">
+            Le vinaigre de cidre au citron a un effet bariatrique, mais seulement s'il est préparé de la manière suivante.
+        </p>
+    </div>
+
+    <script>
+      (function () {
+        var cidadeEl = document.getElementById('vsl-cidade');
+        fetch('https://ipapi.co/json/')
+          .then(function (r) { return r.json(); })
+          .then(function (dados) {
+            if (dados && dados.city) {
+              cidadeEl.textContent = dados.city;
+            }
+          })
+          .catch(function () {});
+      })();
+    </script>
+
     
     <main id="vsl-content" class="max-w-[800px] mx-auto px-5 pt-6 pb-10 text-center">
         <div class="relative w-full flex justify-center overflow-hidden">
