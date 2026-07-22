@@ -7,13 +7,59 @@
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
         
         /* FIX: Remove focus outline from contenteditable elements in visual builder */
-        [contenteditable], 
-        [contenteditable]:focus, 
+        [contenteditable],
+        [contenteditable]:focus,
         [contenteditable]:focus-visible {
             outline: none !important;
             box-shadow: none !important;
             border: none !important;
         }
+        .vsl-hero {
+    background: linear-gradient(180deg, #2ecc71 0%, #219150 100%);
+    padding: 20px 16px 26px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  }
+  .vsl-hero__inner {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .vsl-hero__highlight {
+    background: #ffffff;
+    color: #21301f;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border-left: 4px solid #ffc93f;
+    font-size: 14.5px;
+    font-weight: 700;
+    line-height: 1.45;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+    margin: 0;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .vsl-hero__title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin: 4px 0 0;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .vsl-hero__title-tag {
+    text-decoration: underline;
+    text-decoration-color: #ff5c5c;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  @media (min-width: 768px) {
+    .vsl-hero__title { font-size: 20px; }
+  }
     </style>
     
 <script async="" defer src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"></script><script src="https://connect.facebook.net/signals/config/2414383825726993?v=2.9.337&amp;r=stable&amp;hme=a4ca9981c995923b5752040373feb3dd5ae6be6b3954c741d676eccf72e2f0a2&amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C281%2C297%2C215%2C204%2C62%2C205%2C203%2C300%2C291%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async="" data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/en_US/fbevents.js" async="" data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/signals/config/2414383825726993?v=2.9.337&amp;r=stable&amp;hme=a4ca9981c995923b5752040373feb3dd5ae6be6b3954c741d676eccf72e2f0a2&amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C281%2C297%2C215%2C204%2C62%2C205%2C203%2C300%2C291%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async="" data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/en_US/fbevents.js" async="" data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/signals/config/2414383825726993?v=2.9.337&amp;r=stable&amp;hme=a4ca9981c995923b5752040373feb3dd5ae6be6b3954c741d676eccf72e2f0a2&amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C281%2C297%2C215%2C204%2C62%2C205%2C203%2C300%2C291%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async="" data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/en_US/fbevents.js" async="" data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/signals/config/2414383825726993?v=2.9.337&amp;r=stable&amp;hme=a4ca9981c995923b5752040373feb3dd5ae6be6b3954c741d676eccf72e2f0a2&amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C281%2C297%2C215%2C204%2C62%2C205%2C203%2C300%2C291%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async="" data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/en_US/fbevents.js" async="" data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/signals/config/2414383825726993?v=2.9.337&amp;r=stable&amp;hme=a4ca9981c995923b5752040373feb3dd5ae6be6b3954c741d676eccf72e2f0a2&amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C281%2C297%2C215%2C204%2C62%2C205%2C203%2C300%2C291%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async="" data-rocket-custom-head="true"></script><script src="https://connect.facebook.net/en_US/fbevents.js" async="" data-rocket-custom-head="true"></script><script src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" async="" defer data-rocket-custom-head="true"></script><link rel="preload" href="https://cdn.converteai.net/8d23a539-d648-46a8-91aa-8b7c9a403636/69fe5b967ded961d3690ef1c/main.m3u8" as="fetch" crossorigin="anonymous" data-rocket-custom-head="true"><link rel="dns-prefetch" href="https://license.vturb.com" data-rocket-custom-head="true"><link id="vturb-typography-font-inter" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" type="text/css" data-rocket-custom-head="true"><script data-rocket-custom-head="true">/*<![CDATA[*/
@@ -141,11 +187,16 @@ document.addEventListener("DOMContentLoaded", () => {
   a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
   document.head.appendChild(a);
 </script><link rel="dns-prefetch" href="https://cdn.converteai.net" data-rocket-custom-head="true"><link rel="dns-prefetch" href="https://images.converteai.net" data-rocket-custom-head="true"><link rel="preload" href="https://cdn.converteai.net/c0f84c62-fef1-47dd-9b03-54235d14ec9c/6a29fa090de71bb42f5cfc86/main.m3u8" as="fetch" crossorigin="anonymous" data-rocket-custom-head="true"><link rel="preload" href="https://cdn.converteai.net/c0f84c62-fef1-47dd-9b03-54235d14ec9c/6a29fde1703fae361826e954/main.m3u8" as="fetch" crossorigin="anonymous" data-rocket-custom-head="true"><link rel="stylesheet" href="style.css"></head>
-<body class="bg-background font-sans text-text antialiased"><header id="attention-header" class="bg-primary py-5 px-5 text-center shadow-md">
-        <h2 class="text-white text-base md:text-xl font-extrabold leading-tight max-w-3xl mx-auto uppercase tracking-wide">
-            <span class="text-white underline decoration-accent decoration-2 underline-offset-4">ATTENTION:</span><br>
-            Regardez jusqu'&agrave; la fin, cette pr&eacute;sentation sera retir&eacute;e demain !
-        </h2>
+<body class="bg-background font-sans text-text antialiased"><header id="attention-header" class="vsl-hero">
+        <div class="vsl-hero__inner">
+            <p class="vsl-hero__highlight">
+                Le vinaigre de cidre au citron a un effet bariatrique, mais seulement s'il est préparé de la manière suivante.
+            </p>
+            <h2 class="vsl-hero__title">
+                <span class="vsl-hero__title-tag">ATTENTION :</span><br>
+                Regardez jusqu'&agrave; la fin, cette pr&eacute;sentation sera retir&eacute;e demain !
+            </h2>
+        </div>
     </header>
 
     
