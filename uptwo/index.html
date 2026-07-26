@@ -425,6 +425,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Botão principal aparece após 180 segundos
     setTimeout(function(){
         document.querySelectorAll(".is-delay-180").forEach(obj => obj.classList.remove("is-delay-180"));
+
+        // Leva o usuário até o botão assim que ele aparece
+        var ctaButton = document.querySelector('#cta-section button');
+        if (ctaButton) {
+            ctaButton.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
     }, 180 * 1000);
 
     // Link "Non merci" aparece após 210 segundos
